@@ -1,0 +1,25 @@
+//
+//  AppDelegate.h
+//  HttpServerDemo
+//
+//  Created by iwevon on 16/7/13.
+//  Copyright © 2016年 iwevon. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class HTTPServer;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UInt64 currentDataLength;
+}
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) HTTPServer *httpserver;
+@property (strong, nonatomic) UIProgressView *progressView;     //upload progress
+@property (strong, nonatomic) UILabel *lbHTTPServer;
+@property (strong, nonatomic) UILabel *lbFileSize;                      //Total size of uploaded file
+@property (strong, nonatomic) UILabel *lbCurrentFileSize;           //The size of the current upload
+
+@end
+
