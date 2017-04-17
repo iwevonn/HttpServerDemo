@@ -1,1 +1,0 @@
-link ../../../CocoaLumberjack/Classes/Extensions/DDDispatchQueueLogFormatter.h
